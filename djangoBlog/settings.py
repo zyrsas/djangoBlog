@@ -28,6 +28,9 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+DISQUS_API_KEY = 'k307fbaHxJkeRd986KCFvLyYXEbWrd8A81Uiqu0P4eEaFeUsd0guYgDeMo71qCBY'
+DISQUS_WEBSITE_SHORTNAME = 'blog'
+
 # Application definition
 
 INSTALLED_APPS = (
@@ -38,6 +41,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'disqus',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -102,3 +106,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+
